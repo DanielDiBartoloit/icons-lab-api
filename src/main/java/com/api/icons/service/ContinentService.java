@@ -1,13 +1,12 @@
 package com.api.icons.service;
 
 import com.api.icons.dto.ContinentDTO;
-import org.springframework.stereotype.Service;
 
-@Service
-public class ContinentService {
+import java.util.List;
 
-    public ContinentDTO save (ContinentDTO dto){
-     // TODO: guardar
-      return dto;
-    }
+public interface ContinentService {
+
+    ContinentDTO save(ContinentDTO dto);
+
+    List<ContinentDTO> getAllContinents();
 }

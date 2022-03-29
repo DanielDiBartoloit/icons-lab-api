@@ -8,8 +8,9 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name= "continent")
-@Getter @Setter
+@Table(name = "continent")
+@Getter
+@Setter
 public class ContinentEntity {
 
     @Id
@@ -19,8 +20,6 @@ public class ContinentEntity {
     private String image;
 
     private String denomination;
-
-
 
 
 }

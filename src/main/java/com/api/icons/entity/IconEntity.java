@@ -13,7 +13,8 @@ import java.util.List;
 
 @Entity
 @Table
-@Getter @Setter
+@Getter
+@Setter
 @SQLDelete(sql = "UPDATE icon SET delete = true where id=?")
 @Where(clause = "delete=false")
 public class IconEntity {
@@ -32,7 +33,6 @@ public class IconEntity {
 
     @ManyToMany
     private List<CountryEntity> countries = new ArrayList<>();
-
 
 
 }

@@ -10,7 +10,8 @@ import java.util.Set;
 
 @Entity
 @Table(name = "country")
-@Getter @Setter
+@Getter
+@Setter
 public class CountryEntity {
 
     @Id
@@ -42,8 +43,6 @@ public class CountryEntity {
             joinColumns = @JoinColumn(name = "country_id"),
             inverseJoinColumns = @JoinColumn(name = "icon_id"))
     private Set<IconEntity> icons = new HashSet<>();
-
-
 
 
 }
